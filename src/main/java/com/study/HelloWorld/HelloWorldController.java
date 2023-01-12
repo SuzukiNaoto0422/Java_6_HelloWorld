@@ -9,7 +9,7 @@ import java.time.LocalTime;
 @RestController
 public class HelloWorldController {
     @RequestMapping("hello")//value属性だけなら省略できる。value = "/hello"
-    String hello() {
+    public String hello() {
         LocalDateTime now =LocalDateTime.now();
         //現在の日時を取得するために LocalDateTime.now()を使用し、現在時刻を取得
         LocalTime localTime = now.toLocalTime();
